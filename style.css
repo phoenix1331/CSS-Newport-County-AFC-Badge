@@ -2,46 +2,58 @@
 * Newport County AFC Badge
 * By Darren Williams
 *
+*
+* Black #252525
+* Orange/Amber #ffa14d
+*
 */
 
 #wrap{
 	width:612px;
 	height:612px;
 	padding:10px;
-	position:relavive;
+	position:relative;
 }
 
 /* Circles */
 
 #blackCircle{
-  width:600px;
-  height:600px;
-  background:#000;
-  border:solid 6px #ffa15b;
-  border-radius:50%;
-  position:relative;
+	width:600px;
+	height:600px;
+	background:#252525;
+	border:solid 4px #ffa15b;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	position:relative;
 }
 
 #innerWhiteCircle{
-  width:400px;
-  height:400px;
-  background:#fff;
-  border-radius:50%;
-  position:absolute;
-  top:100px;
-  left:100px;
-  overflow:hidden;
+	width:400px;
+	height:400px;
+	background:#fff;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	position:absolute;
+	top:100px;
+	left:100px;
+	overflow:hidden;
 }
 
 /* Black Chevron */
 
 #chevron {
-  position:relative;
-  top:210px;
-  left:180px;
-  height:90px;
-  width:240px;
-  z-index:99;
+	position:relative;
+	top:210px;
+	left:180px;
+	height:90px;
+	width:240px;
+	z-index:99;
 }
 
 #chevron:before {
@@ -51,12 +63,12 @@
 	left:0;
 	height:100%;
 	width:50%;
-	background:#000;
+	background:#252525;
 	-webkit-transform:skew(0deg, 45deg);
-	-moz-transform:skew(0deg, 6deg);
-	-ms-transform:skew(0deg, 6deg);
-	-o-transform:skew(0deg, 6deg);
-	transform:skew(0deg, 6deg);
+	-moz-transform:skew(0deg, 45deg);
+	-ms-transform:skew(0deg, 45deg);
+	-o-transform:skew(0deg, 45deg);
+	transform:skew(0deg, 45deg);
 }
 
 #chevron:after {
@@ -66,12 +78,12 @@
   right:0;
   height:100%;
   width:50%;
-  background:#000;
+  background:#252525;
   -webkit-transform:skew(0deg, -45deg);
-  -moz-transform:skew(0deg, -6deg);
-  -ms-transform:skew(0deg, -6deg);
-  -o-transform:skew(0deg, -6deg);
-  transform:skew(0deg, -6deg);
+  -moz-transform:skew(0deg, -45deg);
+  -ms-transform:skew(0deg, -45deg);
+  -o-transform:skew(0deg, -45deg);
+  transform:skew(0deg, -45deg);
 }
 
 /* Shield */
@@ -84,22 +96,30 @@
 }
 
 #shield:before{
-  content:"";
-  position: absolute;
-  width:240px;
-  height:150px;
-background:#ffa15b;
+	content:"";
+	position: absolute;
+	width:240px;
+	height:150px;
+	background:#ffa15b;
 }
 
 #shield:after{
-  content:"";
-  position: absolute;
-  top:34px;
-  width:240px;
-  height:240px;
+	content:"";
+	position: absolute;
+	top:34px;
+	width:240px;
+	height:240px;
 	background:#ffa15b;
-  border-radius:120px 50px 120px;
-  -webkit-transform:rotate(-45deg);
+	-webkit-border-radius:120px 50px;
+	-moz-border-radius:120px 50px;
+	-o-border-radius:120px 50px;
+	-ms-border-radius:120px 50px;
+	border-radius:120px 50px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
 }
 
 /* Gives the shield its black border */
@@ -112,186 +132,245 @@ background:#ffa15b;
 }
 
 #backShield:before{
-  content:"";
-  position: absolute;
-  width:248px;
-  height:158px;
-background:#000;
+	content:"";
+	position: absolute;
+	width:248px;
+	height:158px;
+	background:#252525;
 }
 
 #backShield:after{
-  content:"";
-  position: absolute;
-  top:40px;
-  width:248px;
-  height:248px;
-	background:#000;
-  border-radius:124px 50px 124px;
-  -webkit-transform:rotate(-45deg);
+	content:"";
+	position: absolute;
+	top:40px;
+	width:242px;
+	height:248px;
+	left:3px;
+	background:#252525;
+	-webkit-border-radius:120px 50px;
+	-moz-border-radius:120px 50px;
+	-o-border-radius:120px 50px;
+	-ms-border-radius:120px 50px;
+	border-radius:120px 50px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
 }
 
 /* Line Masks */
 
 #maskOne {
-  position:absolute;
-  top:46px;
-  right:0;
-  left:0;
-  margin:0 auto;
-  width:288px;
-  height:304px;
-  background:#fff;
-  border-radius:60% / 10%;
-  z-index:4;
+	position:absolute;
+	top:46px;
+	right:0;
+	left:0;
+	margin:0 auto;
+	width:288px;
+	height:304px;
+	background:#fff;
+	-webkit-border-radius:60% / 10%;
+	-moz-border-radius:60% / 10%;
+	-o-border-radius:60% / 10%;
+	-ms-border-radius:60% / 10%;
+	border-radius:60% / 10%;
+	z-index:4;
 }
 
 #maskTwo {
-  position:absolute;
-  top:62px;
-  right:0;
-  left:0;
-  margin:0 auto;
-  width:334px;
-  height:272px;
-  background:#fff;
-  border-radius:12% / 60%;
-  z-index:5;
-  overflow:hidden;
+	position:absolute;
+	top:62px;
+	right:0;
+	left:0;
+	margin:0 auto;
+	width:334px;
+	height:272px;
+	background:#fff;
+	-webkit-border-radius:12% / 60%;
+	-moz-border-radius:12% / 60%;
+	-o-border-radius:12% / 60%;
+	-ms-border-radius:12% / 60%;
+	border-radius:12% / 60%;
+	z-index:5;
+	overflow:hidden;
 }
 
 /* Black Curved Lines */
 
 #hCenterLine{
-  width:440px;
-  height:110px;
-  position:absolute;
-  top:70px;
-  left:-60px;
-  border-radius:50%;
-  background:#fff;
-  border:solid 7px #000;
+	width:440px;
+	height:110px;
+	position:absolute;
+	top:70px;
+	left:-60px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	background:#fff;
+	border:solid 7px #252525;
 }
 
 #htopLine{
-  width:330px;
-  height:20px;
-  background:#000;
-  position:absolute;
-  top:40px;
-  left:0;
-  right:0;
-  margin:0 auto;
-  border-top:solid 50px #000;
-  border-radius:50% / 50%;
-  z-index:2;
+	width:330px;
+	height:20px;
+	background:#fff;
+	position:absolute;
+	top:40px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	border-top:solid 50px #252525;
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
+	z-index:2;
 }
 
 #htopLine:after{
-  content:" ";
-  width:380px;
-  height:1px;
-  position:absolute;
-  top:-43px;
-  left:-20px;
-  border-top:solid 100px #fff;
-  border-radius:50% / 50%;
+	content:" ";
+	width:380px;
+	height:10px;
+	position:absolute;
+	top:-43px;
+	left:-20px;
+	border-top:solid 100px #fff;
+	border-bottom:solid 1px #fff; /* Removes line in IE */
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
 }
 
 #vLeftLine{
-  width:20px;
-  height:280px;
-  background:#000;
-  position:absolute;
-  top:60px;
-  left:27px;
-  border-left:solid 50px #000;
-  border-radius:50% / 50%;
-  z-index:2;
+	width:20px;
+	height:280px;
+	background:#252525;
+	position:absolute;
+	top:60px;
+	left:27px;
+	border-left:solid 50px #252525;
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
+	z-index:2;
 }
 
 #vRightLine{
-  width:20px;
-  height:280px;
-  background:#000;
-  position:absolute;
-  top:60px;
-  right:27px;
-  border-left:solid 50px #000;
-  border-radius:50% / 50%;
-  z-index:2;
+	width:20px;
+	height:280px;
+	background:#252525;
+	position:absolute;
+	top:60px;
+	right:27px;
+	border-left:solid 50px #252525;
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
+	z-index:2;
 }
 
 #hBottomLine{
-  width:340px;
-  height:20px;
-  background:#000;
-  position:absolute;
-  bottom:44px;
-  left:0;
-  right:0;
-  margin:0 auto;
-  border-top:solid 50px #000;
-  border-radius:50% / 50%;
-  z-index:2;
+	width:340px;
+	height:20px;
+	background:#252525;
+	position:absolute;
+	bottom:44px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	border-top:solid 50px #252525;
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
+	z-index:2;
 }
 
 #hBottomLine:after{
-  content:" ";
-  width:380px;
-  height:1px;
-  position:absolute;
-  bottom:6px;
-  left:-20px;
-  border-top:solid 100px #fff;
-  border-radius:50% / 50%;
+	content:" ";
+	width:380px;
+	height:1px;
+	position:absolute;
+	bottom:6px;
+	left:-20px;
+	border-top:solid 100px #fff;
+	border-bottom:solid 1px #fff; /* Removes line in IE */
+	-webkit-border-radius:50% / 50%;
+	-moz-border-radius:50% / 50%;
+	-o-border-radius:50% / 50%;
+	-ms-border-radius:50% / 50%;
+	border-radius:50% / 50%;
 }
 
 #vTop_lines{
-  width:100px;
-  height:100px;
-  background:#fff;
-  border:solid 7px #000;
-  border-radius:50%;
-  position:absolute;
-  top:-30px;
-  right:0;
-  left:0;
-  margin:0 auto;
-  z-index:0;
+	width:100px;
+	height:100px;
+	background:#fff;
+	border:solid 7px #252525;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	position:absolute;
+	top:-30px;
+	right:0;
+	left:0;
+	margin:0 auto;
+	z-index:0;
 }
 
 #vBottomLines{
-  width:100px;
-  height:100px;
-  background:#fff;
-  border:solid 7px #000;
-  border-radius:50%;
-  position:absolute;
-  bottom:-30px;
-  right:0;
-  left:0;
-  margin:0 auto;
-  z-index:0;
+	width:100px;
+	height:100px;
+	background:#fff;
+	border:solid 7px #252525;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	position:absolute;
+	bottom:-30px;
+	right:0;
+	left:0;
+	margin:0 auto;
+	z-index:0;
 }
 
 /* Bottom Dots */
 
 #leftDot,
 #rightDot{
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  background:#ffa14d;
-  position:absolute;
-  bottom:80px;
+	width:30px;
+	height:30px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	background:#ffa14d;
+	position:absolute;
+	bottom:80px;
 }
 
 #leftDot{
-  left:140px;
+	left:140px;
 }
 
 #rightDot{
-  right:140px;
+	right:140px;
 }
 
 /* Text */
@@ -310,9 +389,9 @@ h1 span {
 	/*background:rgba(124,124,124,0.5);*/
 }
 
-h1 span.bt{
+.bt{
 	height:64px;
-	padding-top:240px;
+	padding-top:240px; /* push letter to bottom */
 	z-index:99;
 	position:absolute;
 	/*background:rgba(124,124,124,0.5);*/
@@ -327,8 +406,9 @@ h1 span.bt{
 .n{
 	-webkit-transform:rotate(-70deg);
 	-moz-transform:rotate(-70deg);
-	-ms-transform:rotate(-70deg);
+	-ms-transform:rotate(-70deg); 
 	-o-transform:rotate(-70deg);
+	transform:rotate(-70deg);
 	top:70px;
 	left:155px;
 }
@@ -338,6 +418,7 @@ h1 span.bt{
 	-moz-transform:rotate(-60deg);
 	-ms-transform:rotate(-60deg);
 	-o-transform:rotate(-60deg);
+	transform:rotate(-60deg);
 	top:50px;
 	left:166px;
 }
@@ -347,6 +428,7 @@ h1 span.bt{
 	-moz-transform:rotate(-45deg);
 	-ms-transform:rotate(-45deg);
 	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
 	top:35px;
 	left:168px;
 }
@@ -356,6 +438,7 @@ h1 span.bt{
 	-moz-transform:rotate(-37deg);
 	-ms-transform:rotate(-37deg);
 	-o-transform:rotate(-37deg);
+	transform:rotate(-37deg);
 	top:13px;
 	left:200px;
 }
@@ -365,6 +448,7 @@ h1 span.bt{
 	-moz-transform:rotate(-29deg);
 	-ms-transform:rotate(-29deg);
 	-o-transform:rotate(-29deg);
+	transform:rotate(-29deg);
 	top:0;
 	left:216px;
 }
@@ -374,6 +458,7 @@ h1 span.bt{
 	-moz-transform:rotate(-22deg);
 	-ms-transform:rotate(-22deg);
 	-o-transform:rotate(-22deg);
+	transform:rotate(-22deg);
 	top:-10px;
 	left:244px;
 }
@@ -383,6 +468,7 @@ h1 span.bt{
 	-moz-transform:rotate(-10deg);
 	-ms-transform:rotate(-10deg);
 	-o-transform:rotate(-10deg);
+	transform:rotate(-10deg);
 	top:-14px;
 	left:260px;
 }
@@ -399,6 +485,7 @@ h1 span.bt{
 	-moz-transform:rotate(8deg);
 	-ms-transform:rotate(8deg);
 	-o-transform:rotate(8deg);
+	transform:rotate(8deg);
 	top:-14px;
 	left:306px;
 }
@@ -408,6 +495,7 @@ h1 span.bt{
 	-moz-transform:rotate(18deg);
 	-ms-transform:rotate(18deg);
 	-o-transform:rotate(18deg);
+	transform:rotate(18deg);
 	top:-8px;
 	left:330px;
 }
@@ -417,6 +505,7 @@ h1 span.bt{
 	-moz-transform:rotate(26deg);
 	-ms-transform:rotate(26deg);
 	-o-transform:rotate(26deg);
+	transform:rotate(26deg);
 	top:2px;
 	left:355px;
 }
@@ -426,6 +515,7 @@ h1 span.bt{
 	-moz-transform:rotate(34deg);
 	-ms-transform:rotate(34deg);
 	-o-transform:rotate(34deg);
+	transform:rotate(34deg);
 	top:13px;
 	left:376px;
 }
@@ -435,6 +525,7 @@ h1 span.bt{
 	-moz-transform:rotate(42deg);
 	-ms-transform:rotate(42deg);
 	-o-transform:rotate(42deg);
+	transform:rotate(42deg);
 	top:26px;
 	left:389px;
 }
@@ -447,6 +538,7 @@ h1 span.bt{
 	-moz-transform:rotate(53deg);
 	-ms-transform:rotate(53deg);
 	-o-transform:rotate(53deg);
+	transform:rotate(53deg);
 	top:36px;
 	left:396px;
 }
@@ -456,6 +548,7 @@ h1 span.bt{
 	-moz-transform:rotate(62deg);
 	-ms-transform:rotate(62deg);
 	-o-transform:rotate(62deg);
+	transform:rotate(62deg);
 	top:56px;
 	left:408px;
 }
@@ -465,6 +558,7 @@ h1 span.bt{
 	-moz-transform:rotate(72deg);
 	-ms-transform:rotate(72deg);
 	-o-transform:rotate(72deg);
+	transform:rotate(72deg);
 	top:70px;
 	left:414px;
 }
@@ -476,6 +570,7 @@ h1 span.bt{
 	-moz-transform:rotate(16deg);
 	-ms-transform:rotate(16deg);
 	-o-transform:rotate(16deg);
+	transform:rotate(16deg);
 	top:230px;
 	left:250px;
 }
@@ -485,6 +580,7 @@ h1 span.bt{
 	-moz-transform:rotate(8deg);
 	-ms-transform:rotate(8deg);
 	-o-transform:rotate(8deg);
+	transform:rotate(8deg);
 	top:235px;
 	left:270px;
 }
@@ -494,6 +590,7 @@ h1 span.bt{
 	-moz-transform:rotate(0deg);
 	-ms-transform:rotate(0deg);
 	-o-transform:rotate(0deg);
+	transform:rotate(0deg);
 	top:237px;
 	left:290px;
 }
@@ -503,6 +600,7 @@ h1 span.bt{
 	-moz-transform:rotate(-2deg);
 	-ms-transform:rotate(-2deg);
 	-o-transform:rotate(-2deg);
+	transform:rotate(-2deg);
 	top:237px;
 	left:300px;
 }
@@ -512,6 +610,7 @@ h1 span.bt{
 	-moz-transform:rotate(-8deg);
 	-ms-transform:rotate(-8deg);
 	-o-transform:rotate(-8deg);
+	transform:rotate(-8deg);
 	top:235px;
 	left:300px;
 }
@@ -521,6 +620,7 @@ h1 span.bt{
 	-moz-transform:rotate(-16deg);
 	-ms-transform:rotate(-16deg);
 	-o-transform:rotate(-16deg);
+	transform:rotate(-16deg);
 	top:230px;
 	left:320px;
 }
@@ -532,6 +632,7 @@ h1 span.bt{
 	-moz-transform:rotate(70deg);
 	-ms-transform:rotate(70deg);
 	-o-transform:rotate(70deg);
+	transform:rotate(70deg);
 	top:145px;
 	left:165px;
 }
@@ -541,6 +642,7 @@ h1 span.bt{
 	-moz-transform:rotate(65deg);
 	-ms-transform:rotate(65deg);
 	-o-transform:rotate(65deg);
+	transform:rotate(65deg);
 	top:165px;
 	left:175px;
 }
@@ -550,6 +652,7 @@ h1 span.bt{
 	-moz-transform:rotate(60deg);
 	-ms-transform:rotate(60deg);
 	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
 	top:185px;
 	left:185px;
 }
@@ -559,6 +662,7 @@ h1 span.bt{
 	-moz-transform:rotate(50deg);
 	-ms-transform:rotate(50deg);
 	-o-transform:rotate(50deg);
+	transform:rotate(50deg);
 	top:190px;
 	left:190px;
 }
@@ -570,6 +674,7 @@ h1 span.bt{
 	-moz-transform:rotate(-50deg);
 	-ms-transform:rotate(-50deg);
 	-o-transform:rotate(-50deg);
+	transform:rotate(-50deg);
 	top:190px;
 	left:380px;
 }
@@ -579,6 +684,7 @@ h1 span.bt{
 	-moz-transform:rotate(-60deg);
 	-ms-transform:rotate(-60deg);
 	-o-transform:rotate(-60deg);
+	transform:rotate(-60deg);
 	top:180px;
 	left:385px;
 }
@@ -588,6 +694,7 @@ h1 span.bt{
 	-moz-transform:rotate(-65deg);
 	-ms-transform:rotate(-65deg);
 	-o-transform:rotate(-65deg);
+	transform:rotate(-65deg);
 	top:160px;
 	left:400px;
 }
@@ -597,6 +704,7 @@ h1 span.bt{
 	-moz-transform:rotate(-70deg);
 	-ms-transform:rotate(-70deg);
 	-o-transform:rotate(-70deg);
+	transform:rotate(-70deg);
 	top:135px;
 	left:410px;
 }
