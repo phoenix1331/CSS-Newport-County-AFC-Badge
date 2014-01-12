@@ -4,7 +4,7 @@
 *
 *
 * Black #252525
-* Orange/Amber #ffa14d
+* Orange/Amber #ffa12d
 *
 */
 
@@ -21,7 +21,7 @@
 	width:600px;
 	height:600px;
 	background:#252525;
-	border:solid 4px #ffa15b;
+	border:solid 4px #ffa12d;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	-ms-border-radius:50%;
@@ -100,7 +100,7 @@
 	position: absolute;
 	width:240px;
 	height:150px;
-	background:#ffa15b;
+	background:#ffa12d;
 }
 
 #shield:after{
@@ -109,7 +109,7 @@
 	top:34px;
 	width:240px;
 	height:240px;
-	background:#ffa15b;
+	background:#ffa12d;
 	-webkit-border-radius:120px 50px;
 	-moz-border-radius:120px 50px;
 	-o-border-radius:120px 50px;
@@ -360,7 +360,7 @@
 	-o-border-radius:50%;
 	-ms-border-radius:50%;
 	border-radius:50%;
-	background:#ffa14d;
+	background:#ffa12d;
 	position:absolute;
 	bottom:80px;
 }
